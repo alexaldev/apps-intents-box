@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pesimatik.app_box">
 
-    <permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+<!--    <permission android:name="android.permission.QUERY_ALL_PACKAGES" />-->
 
     <queries>
         <intent>
@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NerdLaunch">
         <activity
-            android:name=".AppBoxActivity"
+            android:name="com.pesimatik.appbox.AppBoxActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

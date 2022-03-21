@@ -89,7 +89,6 @@ gen-external-apklibs
 .gradle
 gradlew.bat
 .idea
-gradle
 
 # Signing files
 .signing/
