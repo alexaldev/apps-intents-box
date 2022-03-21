@@ -1,10 +1,8 @@
-package com.pesimatik.nerdlaunch
+package com.pesimatik.appbox
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.*
-import android.widget.Adapter
 import android.widget.TextView
 import androidx.annotation.Dimension.SP
 import androidx.fragment.app.Fragment
@@ -12,10 +10,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.pesimatik.app_box.R
-import com.pesimatik.nerdlaunch.model.ActivityEntry
-import com.pesimatik.nerdlaunch.model.ActivityUsagesRepository
-import com.pesimatik.nerdlaunch.ui.ActivitiesViewModel
-import com.pesimatik.nerdlaunch.ui.UsageToSizeDispatcher
+import com.pesimatik.appbox.model.ActivityEntry
+import com.pesimatik.appbox.model.ActivityUsagesRepository
+import com.pesimatik.appbox.ui.ActivitiesViewModel
+import com.pesimatik.appbox.ui.UsageToSizeDispatcher
 
 class MainFragment : Fragment() {
 

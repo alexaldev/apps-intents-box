@@ -1,11 +1,8 @@
-package com.pesimatik.nerdlaunch
+package com.pesimatik.appbox
 
 import android.content.Context
-import android.content.SharedPreferences
 import android.content.res.Configuration
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 import com.pesimatik.app_box.R

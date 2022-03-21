@@ -1,4 +1,4 @@
-package com.pesimatik.nerdlaunch
+package com.pesimatik.appbox
 
 import android.content.Context
 import androidx.preference.ListPreference

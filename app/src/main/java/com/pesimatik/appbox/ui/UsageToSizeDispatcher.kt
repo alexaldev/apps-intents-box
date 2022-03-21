@@ -1,7 +1,4 @@
-package com.pesimatik.nerdlaunch.ui
-
-import com.pesimatik.nerdlaunch.FONT_SIZE_NORMAL
-import java.util.HashMap
+package com.pesimatik.appbox.ui
 
 object UsageToSizeDispatcher {
     fun calculateFontSizes(usages: Map<String, Int>): Map<String, Float> {

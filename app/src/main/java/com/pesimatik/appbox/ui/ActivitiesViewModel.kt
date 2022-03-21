@@ -1,13 +1,13 @@
-package com.pesimatik.nerdlaunch.ui
+package com.pesimatik.appbox.ui
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.pesimatik.nerdlaunch.alphabeticSorter
-import com.pesimatik.nerdlaunch.model.ActivityRepository
-import com.pesimatik.nerdlaunch.model.ActivityEntry
-import com.pesimatik.nerdlaunch.model.ActivityUsagesRepository
+import com.pesimatik.appbox.alphabeticSorter
+import com.pesimatik.appbox.model.ActivityRepository
+import com.pesimatik.appbox.model.ActivityEntry
+import com.pesimatik.appbox.model.ActivityUsagesRepository
 
 class ActivitiesViewModel(val app: Application) : AndroidViewModel(app) {
 

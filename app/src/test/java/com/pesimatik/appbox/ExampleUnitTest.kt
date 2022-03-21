@@ -1,4 +1,4 @@
-package com.pesimatik.nerdlaunch
+package com.pesimatik.appbox
 
 import org.junit.Test
 

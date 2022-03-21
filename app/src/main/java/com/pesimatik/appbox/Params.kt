@@ -1,4 +1,4 @@
-package com.pesimatik.nerdlaunch
+package com.pesimatik.appbox
 
 // Preferences
 const val PREFS_TEXT_SIZE = "prefs_text_size"

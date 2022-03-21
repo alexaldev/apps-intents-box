@@ -1,4 +1,4 @@
-package com.pesimatik.nerdlaunch.model
+package com.pesimatik.appbox.model
 
 import android.content.Intent
 import android.content.pm.PackageManager

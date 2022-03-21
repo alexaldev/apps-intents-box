@@ -1,4 +1,4 @@
-package com.pesimatik.nerdlaunch
+package com.pesimatik.appbox
 
 import android.content.SharedPreferences
 import java.lang.IllegalArgumentException
