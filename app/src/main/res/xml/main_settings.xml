@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:key="appearance"
+        app:title="Appearance">
+
+        <ListPreference
+            app:key="text_size"
+            app:title="Text size"
+            app:icon="@drawable/ic_baseline_format_size_24"
+            android:entries="@array/font_size_entries"
+            android:entryValues="@array/font_size_entries_values"
+            app:useSimpleSummaryProvider="true"
+            android:summary="Size of app titles"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
