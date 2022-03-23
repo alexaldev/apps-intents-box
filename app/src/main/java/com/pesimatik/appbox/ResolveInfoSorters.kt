@@ -12,6 +12,10 @@ fun alphabeticSorter(pm: PackageManager): (ResolveInfo, ResolveInfo) -> Int {
     }
 }
 
+fun alphabeticSorter(): (String, String) -> Int {
+    return {s1, s2 -> String.CASE_INSENSITIVE_ORDER.compare(s1, s2) }
+}
+
 fun installationTimeSorter(pm: PackageManager): (ResolveInfo, ResolveInfo) -> Int {
     return { a: ResolveInfo, b: ResolveInfo ->
         (firstInstallTimeOf(a, pm) - firstInstallTimeOf(b, pm)).toInt()

@@ -1,5 +1,7 @@
 package com.pesimatik.appbox.ui
 
+import com.pesimatik.appbox.INITIAL_FONT_SIZE
+
 object UsageToSizeDispatcher {
     fun calculateFontSizes(usages: Map<String, Float>): Map<String, Float> {
         val max = globalMin()
@@ -13,7 +15,7 @@ object UsageToSizeDispatcher {
     }
 
     fun calculateFontSizes(activity: String, usages: Map<String, Float>): Float {
-        return calculateFontSizes(usages)[activity] ?: 15f
+        return calculateFontSizes(usages)[activity] ?: INITIAL_FONT_SIZE
     }
 
     sealed class SizesScaler {

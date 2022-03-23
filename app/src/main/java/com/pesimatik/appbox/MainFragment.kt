@@ -25,7 +25,6 @@ class MainFragment : Fragment() {
     }
     private val entryClickListener: (RenderableActivityEntry) -> Unit = {
         activitiesViewModel.onEntryClick(it.activityEntry)
-//        requireActivity().startActivity(newTaskActivity(it.activityEntry.resolveInfo.activityInfo))
     }
     private val itemLongPressListener: (RenderableActivityEntry) -> Unit = { navigateToSettings() }
 
@@ -45,34 +44,14 @@ class MainFragment : Fragment() {
         mainAdapter = EntriesAdapter(adapterConfig)
         mainRv.adapter = mainAdapter
 
-        activitiesViewModel.activitiesEntries.observe(viewLifecycleOwner) { activityEntries ->
-            mainAdapter.updateEntries(
-                activityEntries.map {
-                    RenderableActivityEntry(it, 15f)
-                }
-            )
+        activitiesViewModel.renderableEntries.observe(viewLifecycleOwner) { renderableActivities ->
+            mainAdapter.updateEntries(renderableActivities)
         }
 
         return v
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        val adapterConfig = Config(mutableListOf(), entryClickListener, itemLongPressListener)
-        mainAdapter = EntriesAdapter(adapterConfig)
-        mainRv.adapter = mainAdapter
-
-        activitiesViewModel.activitiesEntries.observe(viewLifecycleOwner) { activityEntries ->
-            mainAdapter.updateEntries(
-                activityEntries.map {
-                    RenderableActivityEntry(it, 15f)
-                }
-            )
-        }
-    }
-
-    fun navigateToSettings(): Boolean {
+    private fun navigateToSettings(): Boolean {
         requireActivity().supportFragmentManager
             .beginTransaction()
             .replace(R.id.main_container, SettingsFragment.newInstance())

@@ -29,6 +29,6 @@ class AppBoxActivity : AppCompatActivity(), SettingsFragment.Callbacks {
     }
 
     override fun onFontSizeReselected() {
-        AppCompatActivity@this.recreate()
+        this.recreate()
     }
 }
